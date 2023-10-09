@@ -50,8 +50,8 @@ app.get('/', async (req, res) => {
 app.get('/resume', async (req, res) => {
   try {
     let currentDate = `${process.env.RESUME_DATE}`;
-    var file = fs.createReadStream('pdf_files/Resume_PDF-redacted.pdf');
-    var stat = fs.statSync('pdf_files/Resume_PDF-redacted.pdf');
+    var file = fs.createReadStream('pdf_files/BXGResume.redactable.pdf');
+    var stat = fs.statSync('pdf_files/BXGResume.redactable.pdf');
     res.setHeader('Content-Length', stat.size);
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', `attachment; filename=BXGResume_${currentDate}.pdf`);
