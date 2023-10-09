@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-sm navbar-light nav-theme">
+  <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse m-1" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <% if (links.length > 0) { %>
+        <% links.forEach(link => { %>
+            <li class="nav-item ml-2">
+              <a class="nav-link text-primary" href=<%= link.url %>><%= link.title %></a>
+            </li>
+        <% }) %>
+    <% } %>
+    <div class="social-part">
+    </ul>
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-primary m-1"
+        <% const linkedin_obj = sites.find(item => item.title === 'Linkedin'); %>
+        href=<%= linkedin_obj.url %>
+        target="_blank"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-primart m-1"
+        <% const github_obj = sites.find(item => item.title === 'Github'); %>
+        href=<%= github_obj.url %>
+        target="_blank"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="bi bi-github"></i
+      ></a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+      }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+      });
+    });
+  </script>
+</nav>

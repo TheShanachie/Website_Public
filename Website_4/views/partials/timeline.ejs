@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card rounded-0 card-color text-center m-3">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Career</h2>
+                    <div id="content">
+                        <ul class="timeline">
+                            <% if (events.length> 0) { %>
+                                <% events.forEach(event=> { %>
+                                    <li class="event" data-date="<%=event.date%>">
+                                        <a href="<%=event.link%>" target="_blank" style="text-decoration: none;">
+                                            <h1>
+                                                <%=event.title%>
+                                            </h1>
+                                            <h2>
+                                                <%=event.loc%>
+                                            </h2>
+                                            <p>
+                                                <%=event.desc%>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <% }) %>
+                                        <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

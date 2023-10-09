@@ -1,0 +1,23 @@
+<div class="w-100 p-3 card-colunms rounded-0">
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <% if (blogs.length> 0) { %>
+      <% blogs.forEach(blog=> { %>
+        <% if (blog.valid) { %>
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="card rounded-0 mb-3 card-color"><a href=<%=blog.link %> target="_blank">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <%= blog.title %>
+                </h5>
+                <p class="card-text">
+                  <%= blog.snippet %>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <% } %>
+        <% }) %>
+          <% } %>
+  </div>
+</div>
