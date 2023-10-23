@@ -1,0 +1,81 @@
+// variables 
+$site-dk: #373F51;
+$site-med: #58A4B0;
+$site-lt: #A9BCD0;
+$site-gr: #c3c3d2;
+$site-pale: #5f6164;
+
+$secondary: $site-pale;
+$primary: $site-pale;
+$text-secondary: $site-pale;
+$text-primary: $site-pale;
+
+// include Bootstrap to update these colors
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.social-part .fa {
+    padding-right: 20px;
+}
+
+ul li a {
+    margin-right: 20px;
+}
+
+html,
+body {
+    background-color: $site-pale;
+    color: $site-pale;
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    flex: 1;
+}
+
+header {
+    min-height: 50px;
+}
+
+footer {
+    min-height: 50px;
+}
+
+.card-color {
+    background-color: $site-gr;
+    border: $site-dk;
+    border-style: solid;
+    text-decoration: none;
+    color: $site-pale;
+}
+
+.nav-theme {
+    background-color: $site-gr;
+    border-bottom: $site-dk;
+    border-bottom-style: solid;
+    text-decoration: none;
+    color: $site-pale;
+}
+
+.footer-theme {
+    background-color: $site-gr;
+    border-top: $site-dk;
+    border-top-style: solid;
+    text-decoration: none;
+    color: $site-pale; 
+    
+    text-align: center;
+    vertical-align: middle; 
+}
+
+.proj-box {
+    border-style: solid;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
