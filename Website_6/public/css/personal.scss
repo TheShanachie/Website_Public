@@ -1,0 +1,100 @@
+
+.personal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    color: $site-pale;
+    background-color: $site-gr;
+    border: $site-dk;
+    border-style: solid;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/*---- Personal Image Contents ----*/
+
+.img-contents {
+    max-width: 100%;
+    padding: 2%;
+    background-color: $site-pale;
+    border: solid;
+    border-color: $site-dk;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-container {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-box {
+    padding: 0% 5% 0%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .img-container {
+        max-width: 75%;
+    }
+
+    .personal-container {
+        margin: 1rem;
+    }
+  } 
+
+@media only screen and (max-width: 600px) {
+    .img-container {
+        max-width: 100%;
+    }
+  } 
+
+/*---- Personal Desc Contents ----*/
+
+.personal-desc {
+    text-align: center;
+}
+
+.personal-desc .title {
+    font-size: 2.5em;
+    padding: 2%;
+}
+
+.personal-desc .note {
+    line-height: 1em;
+}
+
+.personal-desc .note p {
+    font-size: 1em;
+}
+
+.personal-desc .body {
+    line-height: 1.5em;
+    padding: 5%;
+    font-size: 1em;
+}
+
+/*---- Presume download Contents ----*/
+.resume-container {
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+.resume-container .resume-button {
+    border: solid;
+    border-color: $site-dk;
+    padding: 1%;
+}
+
+.resume-container .resume-link {
+    text-decoration: none;
+    font-size: 1em;
+}
+

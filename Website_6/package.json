@@ -1,0 +1,31 @@
+{
+  "name": "boostrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --no-source-map public/css/main.scss public/css/styles.css",
+    "start": "nodemon app.js",
+    "build": "npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
+    "compass-mixins": "^0.12.12",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jquery": "^3.7.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.4.4",
+    "morgan": "^1.10.0",
+    "node-compass": "^0.2.4",
+    "node-sass": "^9.0.0",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "compass-importer": "^0.4.1"
+  }
+}
